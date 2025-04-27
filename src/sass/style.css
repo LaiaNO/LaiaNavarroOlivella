@@ -3,40 +3,45 @@ body {
   min-height: 100%;
   height: 100%;
 }
+
 .screenBack {
-  background-color: (149, 165, 166);
+  background-color: 149, 165, 166;
 }
-.services_3col:hover { 
+
+.services_3col:hover {
   transform: scale(1.5);
 }
-.col{
+
+.col {
   border-right: 1px solid black;
 }
 
-.backPrincipal{
+.backPrincipal {
   background-image: url("../assets/backgrounds/Principal_Baground_LNO.jpeg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
-.titulo_entrada{
+
+.titulo_entrada {
   font-weight: 100;
 }
+
 .highlight {
-  background: url('../assets/backgrounds/Text_backgroug.png');
+  background: url("../assets/backgrounds/Text_backgroug.png");
   background-repeat: no-repeat;
   background-size: 100% 95%;
   padding: 27px 100px;
-  }
+}
 
-  @media (max-width:460px){
-    .col{
-      font-size: 12px;
-    }
-    .highlight {
-      background: none;
-      }
-    .titulo_entrada, .subtitulo_entrada{
-      background: rgba(255,255,255,0.5);
-    }
+@media (max-width: 460px) {
+  .col {
+    font-size: 12px;
   }
+  .highlight {
+    background: none;
+  }
+  .titulo_entrada, .subtitulo_entrada {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}/*# sourceMappingURL=style.css.map */
