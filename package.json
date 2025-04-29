@@ -4,7 +4,7 @@
   "description": "My personal website",
   "main": "index.js",
   "scripts": {
-    "deploy": "npm run build && gh-pages -d public",
+    "deploy": "npm run build && gh-pages -d build --cname www.lnavarroolivella.com",
     "build:sass": "sass --no-source-map src/css:public/css",
     "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
