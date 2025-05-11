@@ -4,11 +4,12 @@
   "description": "My personal website",
   "main": "index.js",
   "scripts": {
-    "deploy": "npm run build && npx gh-pages -d public -cname www.lnavarroolivella.com --force",
+    "deploy": "npm run build && npx gh-pages -d public",
     "build:sass": "sass --no-source-map src/css:public/css",
     "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
     "copy:js": "copyfiles -u 1 ./src/*.js public",
+    "copy:cname": "copyfiles -u 1 ./src/CNAME public",
     "copy": "npm-run-all --parallel copy:*",
     "watch:assets": "onchange 'src/assest/**/*' -- npm run copy:assets",
     "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
