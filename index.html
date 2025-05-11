@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="p:domain_verify" content="baff95315b95a794e151e06d2bf00389" />
     <title>Laia Navarro Olivella</title>
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://yoursite.com/en/index.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://yoursite.com/index.html"
+    />
+
     <link
       href="css/style.css"
       rel="stylesheet"
@@ -67,18 +78,42 @@
         <div class="collapse navbar-collapse" id="navbarsExample02">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#">Proyectos</a>
+            </li>
+          </ul>
+          <!-- Language Switcher -->
+          <!-- Language Switcher Dropdown -->
+          <ul class="navbar-nav me-2">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-globe"></i> ES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li>
+                  <a class="dropdown-item" href="en/index.html">English</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="fr/index.html">Français</a>
+                </li>
+              </ul>
             </li>
           </ul>
           <form>
             <input
               class="form-control"
               type="text"
-              placeholder="Search"
-              aria-label="Search"
+              placeholder="Buscar"
+              aria-label="Buscar"
             />
           </form>
         </div>
@@ -144,7 +179,7 @@
           ></a>
         </div>
       </div>
-      <div class="col">Comming soon!</div>
+      <div class="col">Coming soon!</div>
     </div>
 
     <!--Content-->
@@ -161,16 +196,20 @@
         <span style="color: #e5dace">l</span>
         <span style="color: #e7baa0">o</span>
         <span style="color: #b2b2a2">.</span>
-        Do you want to help me carry out my projects? <br />
-        Could you help me with a coffee? <br /><br />
-        One coffee = one more hour of work.<br />
+        ¿Quieres ayudarme a realizar mis proyectos? <br />
+        ¿Podrías ayudarme con un café? <br /><br />
+        Un café = dos hora más de trabajo.<br />
       </h4>
       <script
         type="text/javascript"
         src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"
       ></script>
       <script type="text/javascript">
-        kofiwidget2.init("Support Me on Ko-fi", "#29abe0", "G2G84RY54");
+        kofiwidget2.init(
+          "Ayúdame con un café en Ko-fi",
+          "#212529",
+          "G2G84RY54"
+        );
         kofiwidget2.draw();
       </script>
     </div>
@@ -201,7 +240,7 @@
               tabindex="-1"
               role="button"
               aria-disabled="true"
-              ><i class="bi bi-envelope-fill"></i> Email</a
+              ><i class="bi bi-envelope-fill"></i> Correo</a
             >
             <a
               href="https://www.linkedin.com/in/laia-navarro-olivella-75034b13a/"
@@ -228,7 +267,7 @@
               class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
-              Close
+              Cerrar
             </button>
           </div>
         </div>
