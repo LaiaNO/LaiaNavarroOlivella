@@ -11,14 +11,14 @@
     "copy:js": "copyfiles -u 1 ./src/**/*.js public",
     "copy:cname": "copyfiles -u 1 ./src/CNAME public",
     "copy": "npm-run-all --parallel copy:*",
-    "watch:assets": "onchange 'src/assest/**/*' -- npm run copy:assets",
+    "watch:assets": "onchange 'src/assets/**/*' -- npm run copy:assets",
     "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
     "watch:sass": "sass --watch src/css:public/css",
     "watch:js": "onchange \"src/*.js\" -- npm run copy:js",
     "watch": "npm-run-all --parallel watch:*",
     "serve": "browser-sync start --server public --files public",
     "start": "npm-run-all copy --parallel watch serve",
-    "build": "npm-run-all copy build:*",
+    "build": "npm-run-all copy build:sass && npm run postbuild",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
   },
   "repository": {
