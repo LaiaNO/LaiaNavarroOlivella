@@ -6,266 +6,260 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="p:domain_verify" content="baff95315b95a794e151e06d2bf00389" />
     <title>Laia Navarro Olivella</title>
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://lnavarroolivella.com/en/index.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="es"
-      href="https://lnavarroolivella.com/index.html"
-    />
+    <link rel="alternate" hreflang="en" href="https://yoursite.com/en/index.html" />
+    <link rel="alternate" hreflang="es" href="https://yoursite.com/index.html" />
 
-    <link
-      href="../css/style.css"
-      rel="stylesheet"
-      type="text/css"
-      media="screen, projection"
-    />
-    <!-- CSS only -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen, projection" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-FMWL04ZR7L"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMWL04ZR7L"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag() { dataLayer.push(arguments); }
       gtag("js", new Date());
-
       gtag("config", "G-FMWL04ZR7L");
     </script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
 
   <body>
-    <!--Barra Menu-->
-    <nav
-      class="navbar navbar-expand navbar-dark bg-dark"
-      aria-label="Second navbar example"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Porfolio</a>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="#">LNO</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarsExample02"
-          aria-controls="navbarsExample02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExample02">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projets</a>
-            </li>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#conocimientos">Compétences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contact</a></li>
           </ul>
-          <!-- Language Switcher Dropdown (French version) -->
+
+          <!-- Sélecteur de langue -->
           <ul class="navbar-nav me-2">
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="languageDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-globe"></i> FR
               </a>
               <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                <li>
-                  <a class="dropdown-item" href="../index.html">Español</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../en/index.html">English</a>
-                </li>
+                <li><a class="dropdown-item" href="../index.html">Español</a></li>
+                <li><a class="dropdown-item" href="../en/index.html">English</a></li>
               </ul>
             </li>
           </ul>
-          <form>
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Rechercher"
-              aria-label="Rechercher"
-            />
-          </form>
         </div>
       </div>
     </nav>
-    <div
-      class="-sm d-flex mh-100 justify-content-center align-items-center flex-column bg-opacity-40 backPrincipal"
-      style="min-height: 75%; height: 75%"
-    >
-      <span style="text-align: center" class="highlight">
-        <h1 class="titulo_entrada">Laia Navarro Olivella</h1>
-        <h3 class="subtitulo_entrada">Ingénieure Biomédicale</h3>
-        <p><i>Ingénieur spécialisé dans les processus hospitaliers et la programmation</i></p>
-      </span>
 
-      <button
-        type="button"
-        class="btn btn-dark btn-lg"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        Contacter
-      </button>
+    <!-- HERO — Bureau -->
+    <div id="sobre-mi">
+      <!-- Desktop -->
+      <div class="d-none d-md-block">
+        <section class="hero min-vh-100 d-flex align-items-center bg-dark" style="padding-top: 80px;">
+          <div class="container-fluid px-5">
+            <div class="row align-items-center">
+              <div class="col-md-7 text-white">
+                <h1 class="display-4 fw-bold">Laia Navarro Olivella</h1>
+                <h3 class="text-accent mb-3">Ingénieure Biomédicale</h3>
+                <p class="lead">Spécialisée dans les processus hospitaliers et la programmation</p>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge-gold">Machine Learning</span>
+                  <span class="badge-green">Signal Médical</span>
+                  <span class="badge-gold">Hôpitaux</span>
+                  <span class="badge-green">Neuroingénierie</span>
+                </div>
+                <button class="btn btn-accent btn-lg mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Contacter
+                </button>
+              </div>
+              <div class="col-md-5 text-center">
+                <img src="../assets/backgrounds/CV_Photo.jpeg" alt="Laia Navarro" class="rounded img-fluid shadow mb-1 mt-1" style="width: 300px;">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- HERO — Mobile -->
+      <div class="d-block d-md-none">
+        <section class="bg-dark" style="min-height: 100vh; padding-top: 70px;">
+          <div class="d-flex flex-column align-items-center text-center px-4 py-5 gap-3">
+            <img src="../assets/backgrounds/CV_Photo.jpeg" alt="Laia Navarro" class="rounded-circle shadow" style="width: 120px; height: 120px; object-fit: cover; object-position: center top;">
+
+            <div>
+              <h1 class="text-white mb-0" style="font-size: 1.6rem;">Laia Navarro Olivella</h1>
+              <p style="color: #5a8a5a;" class="mb-0">Ingénieure Biomédicale</p>
+            </div>
+
+            <p class="text-secondary" style="font-size: 0.9rem;">
+              <i>Spécialisée dans les processus hospitaliers et la programmation</i>
+            </p>
+
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <span class="badge-gold">Machine Learning</span>
+              <span class="badge-green">Signal Médical</span>
+              <span class="badge-gold">Hôpitaux</span>
+              <span class="badge-green">Neuroingénierie</span>
+            </div>
+
+            <button class="btn btn-accent btn-lg w-100 mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Contacter
+            </button>
+          </div>
+        </section>
+      </div>
     </div>
-    <!-- https://fontawesome.com Incons -->
-    <div class="row align-items-center mt-5 mb-0 pt-5 text-center">
-      <div class="col">
-        <div class="services_3col">
-          <h4>Machine Learning</h4>
-          <div>
-            <a
-              href="https://www.kaggle.com/datasets"
-              target="_blank"
-              class="btn btn-outline-info btn-lg"
-              tabindex="-1"
-              role="button"
-              aria-disabled="true"
-              ><i class="fa-brands fa-kaggle"></i
-            ></a>
-            <a
-              href="https://github.com/LaiaNO"
-              target="_blank"
-              class="btn btn-outline-dark btn-lg"
-              tabindex="-1"
-              role="button"
-              aria-disabled="true"
-              ><i class="bi bi-github"></i
-            ></a>
+
+    <!-- Compétences -->
+    <section id="conocimientos" class="py-5 text-white bg-dark">
+      <div class="container-fluid px-5">
+        <h2 class="mb-4">Compétences</h2>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="https://github.com/LaiaNO" target="_blank" style="text-decoration: none; flex: 1; min-width: 160px;">
+            <div class="skill-card-button p-3 rounded-3 text-center h-100" style="background-color: #3a2e1a; border: 1px solid #c0974b;">
+              <i class="fa-solid fa-microchip fa-xl mb-3 mt-3 d-block" style="color: #c0974b;"></i>
+              <p class="fw-semibold mb-0" style="color: #c0974b;">Machine Learning</p>
+            </div>
+          </a>
+
+          <div class="skill-card-button p-3 rounded-3 flex-fill text-center" style="min-width: 160px; background-color: #2a3a2a; border: 1px solid #5a8a5a;">
+            <i class="fa-solid fa-heart-pulse fa-xl mb-3 mt-3 d-block" style="color: #7db87d;"></i>
+            <p class="fw-semibold mb-0" style="color: #7db87d;">Signal et Image Médicale</p>
+          </div>
+
+          <div class="skill-card-button p-3 rounded-3 flex-fill text-center" style="min-width: 160px; background-color: #3a2e1a; border: 1px solid #c0974b;">
+            <i class="fa-solid fa-hospital fa-xl mb-3 mt-3 d-block" style="color: #c0974b;"></i>
+            <p class="fw-semibold mb-0" style="color: #c0974b;">Hôpitaux &amp; Électromédecine</p>
+          </div>
+
+          <div class="skill-card-button p-3 rounded-3 flex-fill text-center" style="min-width: 160px; background-color: #2a3a2a; border: 1px solid #5a8a5a;">
+            <i class="fa-solid fa-brain fa-xl mb-3 mt-3 d-block" style="color: #7db87d;"></i>
+            <p class="fw-semibold mb-0" style="color: #7db87d;">Neuroingénierie</p>
+          </div>
+
+          <div class="skill-card-button p-3 rounded-3 flex-fill text-center" style="min-width: 160px; background-color: #3a2e1a; border: 1px solid #c0974b;">
+            <i class="fa-solid fa-cube fa-xl mb-3 mt-3 d-block" style="color: #c0974b;"></i>
+            <p class="fw-semibold mb-0" style="color: #c0974b;">Impression 3D</p>
+          </div>
+
+          <div class="skill-card-button p-3 rounded-3 flex-fill text-center" style="min-width: 160px; background-color: #2a3a2a; border: 1px solid #5a8a5a;">
+            <i class="fa-solid fa-bolt fa-xl mb-3 mt-3 d-block" style="color: #7db87d;"></i>
+            <p class="fw-semibold mb-0" style="color: #7db87d;">Microcontrôleurs</p>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="services_3col">
-          <h4>Projects</h4>
-          <a
-            href="https://hypercubedlabs.com"
-            target="_blank"
-            class="btn btn-outline-danger btn-lg"
-            tabindex="-1"
-            role="button"
-            aria-disabled="true"
-            ><i class="fa-solid fa-diagram-project"></i
-          ></a>
-        </div>
-      </div>
-      <div class="col">Bientôt disponible!</div>
-    </div>
+    </section>
 
-    <!--Content-->
-    <div
-      class="container d-flex mh-100 justify-content-center align-items-center flex-column"
-      style="min-height: 80%; height: 80%"
-    >
-      <!-- Button trigger modal -->
-      <h4 style="text-align: center">
-        <br />
-        <span style="color: #3f3931">H</span>
-        <span style="color: #6d7973">e</span>
-        <span style="color: #b2b2a2">l</span>
-        <span style="color: #e5dace">l</span>
-        <span style="color: #e7baa0">o</span>
-        <span style="color: #b2b2a2">.</span>
-        Bonjour. Voulez-vous m'aider à réaliser mes projets? <br />
-        Pourriez-vous m'aider avec un café? <br /><br />
-        Un café = une heure de travail en plus.<br />
-      </h4>
-      <script
-        type="text/javascript"
-        src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"
-      ></script>
-      <script type="text/javascript">
-        kofiwidget2.init("Soutenez-moi sur Ko-fi", "#212529", "G2G84RY54");
-        kofiwidget2.draw();
-      </script>
+    <!-- Projets -->
+    <div id="proyectos">
+      <!-- Desktop -->
+      <div class="d-none d-md-block">
+        <section class="py-5 text-white bg-dark">
+          <div class="container-fluid px-5">
+            <h2 class="mb-2">Projets</h2>
+            <p class="text-secondary mb-5">Projets personnels &amp; entrepreneuriat</p>
+
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="../assets/ico/LogoHypercubed.ico" alt="Hypercube DL Labs" style="width: 40px; height: 40px; object-fit: contain;">
+              <div>
+                <h3 class="mb-0" style="color: #c0974b;">HypercubedLabs</h3>
+                <p class="mb-0 text-secondary" style="font-size: 0.9rem;">Impression 3D &amp; Solutions Créatives</p>
+              </div>
+              <a href="https://hypercubedlabs.com" target="_blank"
+                class="btn ms-auto"
+                style="border: 1px solid #c0974b; color: #c0974b;">
+                <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Visiter
+              </a>
+            </div>
+
+            <p class="mb-4">
+              Studio de fabrication numérique spécialisé dans l'impression 3D personnalisée,
+              du prototypage technique aux pièces décoratives et aux produits marketing uniques.
+            </p>
+
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+              <li><i class="fa-solid fa-circle fa-2xs me-2" style="color: #5a8a5a;"></i>Impression 3D personnalisée</li>
+              <li><i class="fa-solid fa-circle fa-2xs me-2" style="color: #5a8a5a;"></i>Prototypage technique</li>
+              <li><i class="fa-solid fa-circle fa-2xs me-2" style="color: #5a8a5a;"></i>Conception de pièces</li>
+              <li><i class="fa-solid fa-circle fa-2xs me-2" style="color: #5a8a5a;"></i>Marketing — sous-verres, clips personnalisés</li>
+              <li><i class="fa-solid fa-circle fa-2xs me-2" style="color: #5a8a5a;"></i>Décoration — pots de fleurs modernes, luminaires</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Mobile -->
+      <div class="d-block d-md-none">
+        <section class="py-5 text-white bg-dark">
+          <div class="container px-4">
+            <h2 class="mb-2">Projets</h2>
+            <p class="text-secondary mb-4">Projets personnels &amp; entrepreneuriat</p>
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="../assets/ico/LogoHypercubed.ico" alt="Hypercube DL Labs" style="width: 40px; height: 40px; object-fit: contain;">
+              <div>
+                <h3 class="mb-0" style="color: #c0974b;">HypercubedLabs</h3>
+                <p class="mb-0 text-secondary" style="font-size: 0.9rem;">Impression 3D &amp; Solutions Créatives</p>
+              </div>
+            </div>
+            <p class="mb-4">
+              Studio de fabrication numérique spécialisé dans l'impression 3D personnalisée,
+              du prototypage technique aux pièces décoratives et aux produits marketing uniques.
+            </p>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+              <li><i class="fa-solid fa-circle fa-2xs me-2" style="color: #5a8a5a;"></i>Impression 3D personnalisée</li>
+              <li><i class="fa-solid fa-circle fa-2xs me-2" style="color: #5a8a5a;"></i>Prototypage technique</li>
+              <li><i class="fa-solid fa-circle fa-2xs me-2" style="color: #5a8a5a;"></i>Conception de pièces</li>
+              <li><i class="fa-solid fa-circle fa-2xs me-2" style="color: #5a8a5a;"></i>Marketing</li>
+              <li><i class="fa-solid fa-circle fa-2xs me-2" style="color: #5a8a5a;"></i>Décoration</li>
+            </ul>
+            <a href="https://hypercubedlabs.com" target="_blank"
+              class="btn ms-auto mt-4"
+              style="border: 1px solid #c0974b; color: #c0974b;">
+              <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Visiter
+            </a>
+          </div>
+        </section>
+      </div>
     </div>
 
     <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Fermer"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
           </div>
           <div class="modal-body d-flex justify-content-center">
-            <a
-              href="mailto: lnavarroolivella@gmail.com"
-              class="btn btn-outline-primary btn-lg"
-              tabindex="-1"
-              role="button"
-              aria-disabled="true"
-              ><i class="bi bi-envelope-fill"></i> Email</a
-            >
-            <a
-              href="https://www.linkedin.com/in/laia-navarro-olivella-75034b13a/"
-              target="_blank"
-              class="btn btn-outline-primary btn-lg mx-3"
-              tabindex="-1"
-              role="button"
-              aria-disabled="true"
-              ><i class="fa-brands fa-linkedin-in"></i> Linkedin</a
-            >
-            <a
-              href="https://github.com/LaiaNO"
-              target="_blank"
-              class="btn btn-outline-primary btn-lg"
-              tabindex="-1"
-              role="button"
-              aria-disabled="true"
-              ><i class="bi bi-github"></i> GitHub</a
-            >
+            <a href="mailto:lnavarroolivella@gmail.com" class="btn btn-accent btn-lg" tabindex="-1" role="button" aria-disabled="true">
+              <i class="bi bi-envelope-fill"></i> E-mail
+            </a>
+            <a href="https://www.linkedin.com/in/laia-navarro-olivella-75034b13a/" target="_blank" class="btn btn-accent btn-lg mx-3" tabindex="-1" role="button" aria-disabled="true">
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://github.com/LaiaNO" target="_blank" class="btn btn-accent btn-lg" tabindex="-1" role="button" aria-disabled="true">
+              <i class="bi bi-github"></i> GitHub
+            </a>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
           </div>
         </div>
       </div>

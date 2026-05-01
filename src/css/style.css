@@ -8,23 +8,14 @@ body {
   background-color: 149, 165, 166;
 }
 
-.services_3col:hover {
-  transform: scale(1.5);
-}
-
-.col {
-  border-right: 1px solid black;
-}
-
 .backPrincipal {
   background-image: url("../assets/backgrounds/Principal_Baground_LNO.jpeg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-.titulo_entrada {
-  font-weight: 100;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
 }
 
 .highlight {
@@ -41,7 +32,84 @@ body {
   .highlight {
     background: none;
   }
-  .titulo_entrada, .subtitulo_entrada {
+  .titulo_entrada,
+  .subtitulo_entrada {
     background: rgba(255, 255, 255, 0.5);
   }
+}
+.badge-green {
+  background: transparent;
+  color: #5a8a5a;
+  border: 1px solid #5a8a5a;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+}
+
+.badge-gold {
+  background: transparent;
+  color: #c0974b;
+  border: 1px solid #c0974b;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+}
+
+.text-accent {
+  color: #5a8a5a !important;
+}
+
+.btn-accent {
+  background-color: #5a8a5a !important;
+  border-color: #5a8a5a !important;
+  color: white !important;
+}
+.btn-accent:hover {
+  background-color: #4a7a4a !important;
+  border-color: #4a7a4a !important;
+  color: white !important;
+}
+
+.navbar .nav-link:hover {
+  color: #5a8a5a !important;
+}
+
+.skillCard {
+  background-color: #16213e;
+  border-color: #444 !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.skillCard i {
+  color: #5a8a5a;
+}
+.skillCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card-button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.skill-card-button:hover {
+  transform: translateY(-4px);
+  opacity: 0.85;
+}
+
+.hero {
+  background-color: #1a1a2e;
+  min-height: 100vh;
+}
+.hero .badge-accent {
+  background-color: #c0974b !important;
+}
+.hero h1 {
+  font-weight: 700;
+}
+.hero h3 {
+  color: #5a8a5a;
+}
+
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=style.css.map */
