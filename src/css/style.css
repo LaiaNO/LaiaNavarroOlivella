@@ -148,4 +148,39 @@ html {
 
 #back-to-top:hover {
   background-color: #a07a38;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(192, 151, 75, 0.25);
+}
+.site-footer .footer-copyright {
+  font-size: 0.85rem;
+  color: #e9ecef;
+}
+.site-footer .footer-credentials {
+  font-size: 0.8rem;
+  color: #adb5bd;
+}
+.site-footer abbr[title] {
+  color: #c0974b;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(192, 151, 75, 0.5);
+  cursor: help;
+}
+.site-footer .footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  color: #c0974b;
+  font-size: 1.1rem;
+  border: 1px solid rgba(192, 151, 75, 0.35);
+  transition: all 0.2s ease;
+}
+.site-footer .footer-social a:hover, .site-footer .footer-social a:focus {
+  color: #fff;
+  background-color: #c0974b;
+  transform: translateY(-2px);
 }/*# sourceMappingURL=style.css.map */

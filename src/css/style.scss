@@ -183,3 +183,46 @@ html {
 #back-to-top:hover {
   background-color: #a07a38;
 }
+
+$footer-accent: #c0974b;
+
+.site-footer {
+  border-top: 1px solid rgba($footer-accent, 0.25); // línea sutil que separa el footer
+
+  .footer-copyright {
+    font-size: 0.85rem;
+    color: #e9ecef;
+  }
+
+  .footer-credentials {
+    font-size: 0.8rem;
+    color: #adb5bd;
+  }
+
+  abbr[title] {
+    color: $footer-accent;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba($footer-accent, 0.5);
+    cursor: help;
+  }
+
+  .footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    color: $footer-accent;
+    font-size: 1.1rem;
+    border: 1px solid rgba($footer-accent, 0.35);
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $footer-accent;
+      transform: translateY(-2px);
+    }
+  }
+}
